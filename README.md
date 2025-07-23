@@ -10,3 +10,5 @@ Contains Basic Java SpringBoot Application as Kafka Consumer
 - spring.kafka.consumer.value-deserializer=org.springframework.kafka.support.serializer.JsonDeserializer
 - spring.kafka.consumer.properties.spring.json.trusted.packages=com.training.model
 - The configuration can also be done via Java Class files. its given in config\EventConsumerConfig class file.
+- With the below command and TopicPartition annotation, consumer can be routed to single partition to listen the messages.
+- `topicPartitions = {@TopicPartition(topic="<TopicName>",partitions = {"2"})}`
